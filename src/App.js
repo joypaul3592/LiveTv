@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Sheard/Navbar/Navbar';
+import UserLogin from './Components/Sheard/UserLogin/UserLogin';
+import { Routes, Route } from "react-router-dom";
+import Carosule from './Components/Sheard/Carosule/Carosule';
+import LiveCard from './Components/LiveCard/LiveCard';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Carosule />
+      <LiveCard />
+
+      <Routes>
+        <Route path='/signup' element={<UserLogin />}></Route>
+      </Routes>
     </div>
   );
 }
