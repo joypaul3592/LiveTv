@@ -1,0 +1,22 @@
+.slick-next:before{
+    color:rgb(36, 36, 36);
+    font-size: 35px !important;
+    position: absolute;
+    right: -50px;
+}
+.slick-prev:before{
+    color:rgb(36, 36, 36);
+    font-size: 35px !important;
+    position: absolute;
+    left: -50px;
+}
+
+.icons{
+    z-index: -10;
+    transition: all 0.2s ease-in-out;
+}
+
+.box:hover .icons{
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+}
